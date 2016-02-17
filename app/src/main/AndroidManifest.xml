@@ -1,0 +1,145 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pan.simplepicture">
+
+
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 基础模块 END -->
+
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+
+    <application
+        android:name="com.pan.simplepicture.PanApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <!-- android:supportsRtl="true" -->
+        <activity
+            android:name="com.pan.simplepicture.view.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pan.simplepicture.view.activity.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.PlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.SmallGameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/activity_game"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.AppRecommendActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/activity_app"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.SettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/drawer_item_keyboard_util_drawer"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+        <activity
+            android:name="com.pan.simplepicture.view.activity.ArticleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" />
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <activity
+            android:name="com.pan.simplepicture.view.activity.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.pan.simplepicture.view.activity.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4eaee02c527015373b000003"></meta-data>
+    </application>
+
+</manifest>

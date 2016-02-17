@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/app"
+        android:icon="@drawable/ic_app"
+        android:orderInCategory="1"
+        android:title="app recommend"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/game"
+        android:icon="@drawable/ic_game"
+        android:orderInCategory="1"
+        android:title="Update Profile"
+        app:showAsAction="always" />
+</menu>

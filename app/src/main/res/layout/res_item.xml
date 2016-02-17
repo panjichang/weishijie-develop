@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_card_about_video"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+
+        <FrameLayout
+            android:id="@+id/store_house_ptr_image_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="true"
+            android:clipToPadding="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_card_pic_video"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/ic_loading_error"
+                fresco:failureImageScaleType="focusCrop"
+                fresco:placeholderImage="@drawable/ic_loading"
+                fresco:placeholderImageScaleType="focusCrop"
+                fresco:roundAsCircle="false" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/kuangkuang" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00ffffff"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_title"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</FrameLayout>

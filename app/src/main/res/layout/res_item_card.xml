@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp">
+
+   <RelativeLayout
+        android:id="@+id/store_house_ptr_image_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_card_about_videos">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_card_about_videos"
+            android:background="@color/md_red_100"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="暴走漫画"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

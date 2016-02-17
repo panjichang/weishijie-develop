@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Just set custom primary and accent color.
+    Looks best with a light theme. see the AndroidManifest
+
+    android:theme="@style/MaterialDrawerTheme.Light.DarkActionBar.TranslucentStatus"
+    -->
+    <color name="divider">#FF18AA8D</color>
+    <color name="text_color">#aaB2B2B2</color>
+
+    <color name="accent">#40C4FF</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#3E50B4</color>
+    <color name="colorPrimaryDark">#2F3E9E</color>
+    <color name="colorPrimaryLight">#C4C9E8</color>
+    <color name="colorAccent">#02A8F3</color>
+    <!-- overwrite the selected colors because the primary color is to dark -->
+    <color name="material_drawer_selected_text">#536EEA</color>
+    <color name="material_drawer_dark_selected_text">#536EEA</color>
+
+    <color name="ldrawer_color">#ffffffff</color>
+    <!-- <color name="actionbar_color">#FF4DD298</color> -->
+
+    <color name="actionbar_color">#ff607d8b</color>
+    <!-- <color name="slide_color">#FF40Ad7e</color> -->
+    <color name="slide_color">#ff607d8b</color>
+    <color name="drawer_arrow_second_color">#ff303f9f</color>
+    <!-- <color name="bg_page">#e7e7e7</color> -->
+    <color name="bg_page">#ffffffff</color>
+    <color name="tab_bg">#993dc1c5</color>
+    <color name="content_bg">#fff2f2f2</color>
+    <color name="comment_text_color">#ff333333</color>
+    <color name="textColor">#ff909090</color>
+    <color name="btn_bg_normal">#c2c2c2</color>
+    <color name="btn_bg_pressed">#a8a8a8</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#AA000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+</resources>

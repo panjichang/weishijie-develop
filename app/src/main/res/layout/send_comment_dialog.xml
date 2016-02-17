@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/radius_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/share_header_bg"
+        android:gravity="center"
+        android:text="评论"
+        android:id="@+id/tv_title"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:id="@+id/et_content"
+        android:hint="留下你的足迹吧。。。"
+        android:lineSpacingExtra="5dp"
+        android:maxLength="70"
+        android:padding="8dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="8dp"
+        android:text="0/70"
+        android:id="@+id/tv_length"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg_selector"
+        android:padding="8dp"
+        android:text="发表"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

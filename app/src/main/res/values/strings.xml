@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">微视界</string>
+
+    <!-- Sample menu -->
+    <string name="action_settings">Settings</string>
+    <string name="drawer_item_compact_header">视频浏览</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_persistent_compact_header">PersistentHeader Drawer</string>
+    <string name="drawer_item_persistent_compact_header_desc">Smaller persistent account header</string>
+    <string name="drawer_item_compact_header_desc">Smaller account header</string>
+    <string name="drawer_item_action_bar_drawer">文章阅读</string>
+    <string name="drawer_item_action_bar_drawer_desc">Shows how to use with an actionbar</string>
+    <string name="drawer_item_multi_drawer">大家都在看</string>
+    <string name="drawer_item_multi_drawer_desc">Left and Right side drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer">图片欣赏</string>
+    <string name="drawer_item_non_translucent_status_drawer_desc">Drawer below statusBar</string>
+    <string name="drawer_item_advanced_drawer">Advanced Drawer</string>
+    <string name="drawer_item_advanced_drawer_desc">More advanced drawer features</string>
+    <string name="drawer_item_keyboard_util_drawer">设置</string>
+    <string name="drawer_item_keyboard_util_drawer_desc">KeyboardUtil to (fix) adjustResize</string>
+    <string name="drawer_item_embedded_drawer">Embedded Drawer</string>
+    <string name="drawer_item_embedded_drawer_desc">Embed the drawer anywhere</string>
+    <string name="drawer_item_mini_drawer">MiniDrawer</string>
+    <string name="drawer_item_mini_drawer_desc">Always visible MiniDrawer</string>
+    <string name="drawer_item_fullscreen_drawer">FullScreen Drawer</string>
+    <string name="drawer_item_fullscreen_drawer_desc">Drawer in FullScreen activity</string>
+    <string name="drawer_item_custom_container_drawer">CustomContainer Drawer</string>
+    <string name="drawer_item_custom_container_drawer_desc">Drawer in different view hirachy</string>
+    <string name="drawer_item_menu_drawer">Menu Drawer</string>
+    <string name="drawer_item_menu_drawer_desc">Drawer from menu.xml</string>
+    <string name="drawer_item_fragment_drawer">Fragment Drawer</string>
+    <string name="drawer_item_fragment_drawer_desc">Use drawer within fragments</string>
+    <string name="drawer_item_collapsing_toolbar_drawer">CollapsingToolbar Drawer</string>
+    <string name="drawer_item_collapsing_toolbar_drawer_desc">Uses a CollapsingToolbarLayout</string>
+    <string name="drawer_item_crossfade_drawer_layout_drawer">CrossfadeDrawerLayout</string>
+    <string name="drawer_item_crossfade_drawer_layout_drawer_desc">PREVIEW of a CrossfadeDrawerLayout</string>
+
+    <string name="drawer_item_menu_drawer_item">Menu Drawer Item</string>
+    <string name="drawer_item_menu_drawer_item_desc">Sample menu item with overflow button</string>
+
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Free Play</string>
+    <string name="drawer_item_custom">Custom</string>
+    <string name="drawer_item_section_header">Section Header</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+
+    <string name="activity_app">应用推荐</string>
+    <string name="activity_game">游戏</string>
+    <string name="time_format">00:00</string>
+    <string name="action_recommend">推荐好友</string>
+    <string name="action_feedback">意见反馈</string>
+    <string name="action_search">搜索</string>
+    <string name="action_share">分享</string>
+    <string name="action_grade">赏个好评</string>
+    <string name="action_favoriter">收藏</string>
+    <string name="setting_factory">加入QQ群</string>
+    <string name="setting_factory_web">群号 : 256484649</string>
+    <string name="setting_email">联系我们</string>
+    <string name="setting_email_username">邮箱 : pjc916568516@163.com</string>
+    <string name="setting_pay">捐助开发者</string>
+    <string name="setting_pay_username">支付宝帐号 : pjc916568516@163.com</string>
+
+    <array name="video_tab">
+        <item>电影@panjichang@6</item>
+        <item>最美创意@panjichang@1</item>
+        <item>动画精选@panjichang@0</item>
+        <item>热门电影@panjichang@7</item>
+        <item>MV@panjichang@4</item>
+        <item>广告/宣传@panjichang@8</item>
+        <item>剧情/短片@panjichang@9</item>
+        <item>游戏CG@panjichang@2</item>
+        <item>预告/花絮@panjichang@3</item>
+
+
+      <!--  <item>院线热映@panjichang@5</item>-->
+
+
+        <item>轻松学堂@panjichang@100</item>
+        <item>音乐舞蹈@panjichang@101</item>
+        <item>访谈演讲@panjichang@102</item>
+        <item>娱乐八卦@panjichang@103</item>
+        <item>恶搞配音@panjichang@104</item>
+        <item>搞笑@panjichang@105</item>
+        <item>吐槽@panjichang@106</item>
+        <item>体育@panjichang@107</item>
+        <item>汽车@panjichang@108</item>
+        <item>脱口秀@panjichang@109</item>
+        <item>生活@panjichang@110</item>
+        <item>动漫@panjichang@111</item>
+        <item>微电影@panjichang@112</item>
+        <item>记录片@panjichang@113</item>
+    </array>
+    <array name="pictrue_tab">
+        <item>美图美句@panjichang@0</item>
+        <item>手写美句@panjichang@1</item>
+        <item>经典对白@panjichang@2</item>
+      <!--  <item>美女图片@panjichang@3</item>-->
+    </array>
+
+    <array name="text_tab">
+        <item>励志文章@panjichang@http://www.lz13.cn/lizhi/lizhiwenzhang.html</item>
+        <item>成功励志@panjichang@http://www.lz13.cn/lizhi/chenggonglizhi.html</item>
+        <item>励志故事@panjichang@http://www.lz13.cn/lizhi/lizhigushi.html</item>
+        <item>励志人物@panjichang@http://www.lz13.cn/lizhi/lizhirenwu.html</item>
+        <item>励志名言@panjichang@http://www.lz13.cn/lizhi/lizhimingyan.html</item>
+        <item>名人名言@panjichang@http://www.lz13.cn/lizhi/mingrenmingyan.html</item>
+        <item>励志电影@panjichang@http://www.lz13.cn/lizhi/lizhidianying.html</item>
+        <item>励志歌曲@panjichang@http://www.lz13.cn/lizhi/lizhigequ.html</item>
+        <item>人生感悟@panjichang@http://www.lz13.cn/lizhi/renshengganwu.html</item>
+
+        <item>人生哲理@panjichang@http://www.lz13.cn/lizhi/zheli.html</item>
+        <item>经典语录@panjichang@http://www.lz13.cn/lizhi/jingdianyulu.html</item>
+        <item>经典句子@panjichang@http://www.lz13.cn/lizhi/jingdianyuduan.html</item>
+        <item>职场励志@panjichang@http://www.lz13.cn/lizhi/zhichanglizhi.html</item>
+        <item>励志创业@panjichang@http://www.lz13.cn/lizhi/lizhichuangye.html</item>
+        <item>青春励志@panjichang@http://www.lz13.cn/lizhi/qingchunlizhi.html</item>
+
+        <item>高三励志@panjichang@http://www.lz13.cn/lizhi/gaosanlizhi.html</item>
+        <item>为人处事@panjichang@http://www.lz13.cn/lizhi/weirenchushi.html</item>
+        <item>家庭教育@panjichang@http://www.lz13.cn/lizhi/jiatingjiaoyu.html</item>
+        <item>励志演讲@panjichang@http://www.lz13.cn/lizhi/lizhiyanjiang.html</item>
+        <item>感恩励志@panjichang@http://www.lz13.cn/lizhi/ganenlizhi.html</item>
+        <item>经典美文@panjichang@http://www.lz13.cn/lizhi/meiwen.html</item>
+
+        <item>伤感日志@panjichang@http://www.lz13.cn/lizhi/shanggan.html</item>
+        <item>励志口号@panjichang@http://www.lz13.cn/lizhi/lizhikouhao.html</item>
+        <item>励志书籍@panjichang@http://www.lz13.cn/lizhi/lizhishuji.html</item>
+        <item>励志教育@panjichang@http://www.lz13.cn/lizhi/lizhijiaoyu.html</item>
+
+        <item>励志诗歌@panjichang@http://www.lz13.cn/lizhi/lizhishige.html</item>
+        <item>大学生励志@panjichang@http://www.lz13.cn/lizhi/daxueshenglizhi.html</item>
+        <item>励志奖学金@panjichang@http://www.lz13.cn/lizhi/lizhijiangxuejin.html</item>
+    </array>
+
+    <array name="play_tab">
+        <item>选集</item>
+        <item>评论</item>
+    </array>
+
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+</resources>

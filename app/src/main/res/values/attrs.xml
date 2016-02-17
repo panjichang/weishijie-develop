@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="customView">
+        <attr name="hint" format="string" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

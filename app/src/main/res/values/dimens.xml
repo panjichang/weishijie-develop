@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="material_drawer_padding_half">4dp</dimen>
+    <dimen name="material_drawer_persistent_height">48dp</dimen>
+    <dimen name="material_drawer_persistent_height_icon">32dp</dimen>
+
+    <dimen name="ldrawer_drawableSize">50.0dip</dimen>
+    <dimen name="ldrawer_barSize">18.0dip</dimen>
+    <dimen name="ldrawer_topBottomBarArrowSize">11.0dip</dimen>
+    <dimen name="ldrawer_thickness">2.0dip</dimen>
+    <dimen name="ldrawer_gapBetweenBars">3.0dip</dimen>
+    <dimen name="ldrawer_middleBarArrowSize">16.0dip</dimen>
+    <dimen name="navdrawer_width">290.0dip</dimen>
+    <dimen name="pagertab_height">45dp</dimen>
+    <dimen name="list_item_loadmore_padding">5dp</dimen>
+    <dimen name="list_item_loadmore_height">55dp</dimen>
+    <dimen name="list_item_margin">9dp</dimen>
+
+    <dimen name="video_play_heigh">220.0dip</dimen>
+    <dimen name="item_card_pic_video">190.0dip</dimen>
+    <dimen name="item_card_about_video">167.0dip</dimen>
+    <dimen name="item_card_about_videos">140.0dip</dimen>
+    <dimen name="tab_height">48dp</dimen>
+</resources>

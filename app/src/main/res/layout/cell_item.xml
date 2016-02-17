@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/ic_loading_error"
+                fresco:failureImageScaleType="focusCrop"
+                fresco:placeholderImage="@drawable/ic_loading"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/gradient_black_85"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/kuangkuang"></View>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="128dip"
+            android:layout_marginRight="8dip"
+            android:text="暴走漫画第一季"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="2dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_serie"
+            android:layout_width="110dip"
+            android:layout_height="150dip"
+            android:scaleType="centerCrop"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@drawable/ic_loading_error"
+            fresco:failureImageScaleType="focusCrop"
+            fresco:placeholderImage="@drawable/ic_loading"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:roundAsCircle="false" />
+    </FrameLayout>
+</RelativeLayout>

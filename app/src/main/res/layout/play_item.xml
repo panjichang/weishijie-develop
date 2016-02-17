@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.baidu.cyberplayer.core.BVideoView
+            android:id="@+id/video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/video_play_heigh"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/controlbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/video_play_heigh"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/play_btn_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/time_format"
+                android:textColor="@android:color/white"
+                android:textSize="13.0sp" />
+
+            <SeekBar
+                android:id="@+id/media_progress"
+                android:layout_width="0.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/time_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/time_format"
+                android:textColor="@android:color/white"
+                android:textSize="13.0sp" />
+
+            <Button
+                android:id="@+id/zoom_btn"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/screensize_zoomout_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/VideoAction"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/video_play_heigh"
+        android:layout_alignParentTop="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/detailPic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@drawable/ic_loading_error"
+            fresco:failureImageScaleType="focusCrop"
+            fresco:placeholderImage="@drawable/ic_loading"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:roundAsCircle="false" />
+
+        <ImageButton
+            android:id="@+id/pre_play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play_btn_style"
+            android:contentDescription="@null" />
+
+        <com.pan.simplepicture.widget.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/app_name"
+            android:textColor="#ff444444"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:failureImage="@drawable/ic_loading_error"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/ic_loading"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="false"
+        fresco:viewAspectRatio="1.25" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic"
+        android:background="@null"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="3"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_content"
+        android:background="@null"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff000000" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
